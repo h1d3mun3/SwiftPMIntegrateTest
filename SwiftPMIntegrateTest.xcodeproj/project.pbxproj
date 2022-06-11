@@ -16,6 +16,7 @@
 		834B03E52854B10D00DF2328 /* SwiftPMIntegrateTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B03E42854B10D00DF2328 /* SwiftPMIntegrateTestTests.swift */; };
 		834B03EF2854B10D00DF2328 /* SwiftPMIntegrateTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B03EE2854B10D00DF2328 /* SwiftPMIntegrateTestUITests.swift */; };
 		834B03F12854B10D00DF2328 /* SwiftPMIntegrateTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B03F02854B10D00DF2328 /* SwiftPMIntegrateTestUITestsLaunchTests.swift */; };
+		83608F042854B8DA007439DB /* TestSubPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 83608F032854B8DA007439DB /* TestSubPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83608F042854B8DA007439DB /* TestSubPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,7 @@
 				834B03E32854B10D00DF2328 /* SwiftPMIntegrateTestTests */,
 				834B03ED2854B10D00DF2328 /* SwiftPMIntegrateTestUITests */,
 				834B03CB2854B10C00DF2328 /* Products */,
+				83608F022854B8DA007439DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,13 @@
 			name = Packages;
 			sourceTree = "<group>";
 		};
+		83608F022854B8DA007439DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +163,9 @@
 			dependencies = (
 			);
 			name = SwiftPMIntegrateTest;
+			packageProductDependencies = (
+				83608F032854B8DA007439DB /* TestSubPackage */,
+			);
 			productName = SwiftPMIntegrateTest;
 			productReference = 834B03CA2854B10C00DF2328 /* SwiftPMIntegrateTest.app */;
 			productType = "com.apple.product-type.application";
@@ -612,6 +625,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83608F032854B8DA007439DB /* TestSubPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestSubPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 834B03C22854B10C00DF2328 /* Project object */;
 }
