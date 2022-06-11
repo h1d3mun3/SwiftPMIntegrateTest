@@ -49,6 +49,7 @@
 		834B03EA2854B10D00DF2328 /* SwiftPMIntegrateTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPMIntegrateTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834B03EE2854B10D00DF2328 /* SwiftPMIntegrateTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPMIntegrateTestUITests.swift; sourceTree = "<group>"; };
 		834B03F02854B10D00DF2328 /* SwiftPMIntegrateTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPMIntegrateTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83608F012854B661007439DB /* TestSubPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TestSubPackage; path = SwiftPackage/TestSubPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		834B03C12854B10C00DF2328 = {
 			isa = PBXGroup;
 			children = (
+				83608F002854B661007439DB /* Packages */,
 				834B03CC2854B10C00DF2328 /* SwiftPMIntegrateTest */,
 				834B03E32854B10D00DF2328 /* SwiftPMIntegrateTestTests */,
 				834B03ED2854B10D00DF2328 /* SwiftPMIntegrateTestUITests */,
@@ -125,6 +127,14 @@
 				834B03F02854B10D00DF2328 /* SwiftPMIntegrateTestUITestsLaunchTests.swift */,
 			);
 			path = SwiftPMIntegrateTestUITests;
+			sourceTree = "<group>";
+		};
+		83608F002854B661007439DB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				83608F012854B661007439DB /* TestSubPackage */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
